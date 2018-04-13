@@ -37,11 +37,6 @@ public class SpringBootSolrApplication implements CommandLineRunner {
 			System.out.println(product);
 		}
 
-		// Find customer by Name ends with 'm'
-		System.out.println("--------------------------------");
-		System.out.println("Find Customers that have names EndsWith m:");
-		System.out.println("--------------------------------");
-
 		for (Customer customer : this.customerRepository.findByNameEndsWith("m")) {
 			System.out.println(customer);
 		}
